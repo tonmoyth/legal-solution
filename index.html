@@ -24,6 +24,9 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'btn-color':'#B68C5A',
+                'hover':'#7c5729',
+                'text-color':'#707070'
               }
             }
           }
@@ -32,12 +35,192 @@
 </head>
 <body class="poppins-font">
     <!-- header -->
-     <header>
-        
+     <header class="w-full md:w-11/12 lg:w-10/12 mx-auto">
+        <!-- navbar section start -->
+        <nav class="mt-5 mb-10">
+            <div class="navbar">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-[#707070]">
+                      <li>
+                        <a>Home</a>
+                    </li>
+                      <li>
+                        <a>Services <i class="fa-solid fa-greater-than"></i></a>
+                      </li>
+                      <li>
+                        <a>Cases <i class="fa-solid fa-greater-than"></i></a>
+                    </li>
+                      <li>
+                        <a>Blog <i class="fa-solid fa-greater-than"></i></a>
+                    </li>
+                      <li>
+                        <a>Contact us <i class="fa-solid fa-greater-than"></i></a>
+                    </li>
+                    </ul>
+                  </div>
+                  <a href="#">
+                    <img src="images/Group 2.png" alt="">
+                  </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-[#707070]">
+                    <li>
+                        <a>Home</a>
+                    </li>
+                      <li>
+                        <a>Services <i class="fa-solid fa-greater-than"></i></a>
+                      </li>
+                      <li>
+                        <a>Cases <i class="fa-solid fa-greater-than"></i></a>
+                    </li>
+                      <li>
+                        <a>Blog <i class="fa-solid fa-greater-than"></i></a>
+                    </li>
+                      <li>
+                        <a>Contact us <i class="fa-solid fa-greater-than"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-btn-color text-white">Free Consultation</a>
+                </div>
+              </div>
+        </nav>
+        <!-- bannar section -->
+         <section class="mb-14">
+            <div class="hero h-[500px] rounded-lg bg-[url(images/banner.png)]">
+                <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="lg:w-[692px]">
+                    <h1 class="mb-5 text-5xl font-bold">We Provide Effective Legal Solutions</h1>
+                    <p class="mb-6">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                    </p>
+                    <input type="text" placeholder="Search your services" class="input input-bordered lg:w-2/3 mb-3 lg:mr-3"/>
+                    <button class="btn bg-btn-color border-none text-white">Get Started</button>
+                    </div>
+                    </div>
+                </div>
+         </section>
      </header>
      <!-- main -->
-      <main>
+      <main class="w-full md:w-11/12 lg:w-10/12 mx-auto">
+        <!-- The Legal Practice Area -->
+         <section>
+                <h2 class="text-center text-4xl font-bold mb-3">The Legal Practice Area</h2>
+                <p class="text-center text-text-color mb-12">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
 
+                <!-- card container -->
+                 <section class="grid gap-15 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- card 1 -->
+                    <div class="hover:shadow-sm hover:scale-[1.1] transition hover:border bg-linear-to-r from-cyan-500 to-blue-500">
+                        <figure class="px-4 pt-5">
+                          <img
+                            src="images/business.png"
+                            alt="business"/>
+                        </figure>
+                        <div class="card-body items-center text-center space-y-4">
+                          <h2 class="card-title">Business Law</h2>
+                          <p class="text-text-color">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                          <div class="w-[40px] h-[40px] bg-btn-color rounded-full flex items-center justify-center hover:bg-hover transition">
+                            <i class="fa-solid fa-arrow-right text-white"></i>
+                          </div>
+                        </div>
+                      </div>
+                     <!-- card-2 -->
+                     <div class="card hover:shadow-sm hover:scale-[1.1] transition hover:border">
+                        <figure class="px-4 pt-5">
+                          <img
+                            src="images/criminal.png"
+                            alt="business"/>
+                        </figure>
+                        <div class="card-body items-center text-center space-y-4">
+                          <h2 class="card-title">Criminal Law</h2>
+                          <p class="text-text-color">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                          <div class="w-[40px] h-[40px] bg-btn-color rounded-full flex items-center justify-center hover:bg-hover transition">
+                            <i class="fa-solid fa-arrow-right text-white"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- card-3 -->
+                      <div class="card hover:shadow-sm hover:scale-[1.1] transition hover:border">
+                        <figure class="px-4 pt-5">
+                          <img
+                            src="images/child.png"
+                            alt="business"/>
+                        </figure>
+                        <div class="card-body items-center text-center space-y-4">
+                          <h2 class="card-title">Child support</h2>
+                          <p class="text-text-color">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                          <div class="w-[40px] h-[40px] bg-btn-color rounded-full flex items-center justify-center hover:bg-hover transition">
+                            <i class="fa-solid fa-arrow-right text-white"></i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- card 4 -->
+                    <div class="card hover:shadow-sm hover:scale-[1.1] transition hover:border hover:bg-linear-to-r from-cyan-500 to-blue-500">
+                        <figure class="px-4 pt-5">
+                          <img
+                            src="images/business.png"
+                            alt="business"/>
+                        </figure>
+                        <div class="card-body items-center text-center space-y-4">
+                          <h2 class="card-title">Business Law</h2>
+                          <p class="text-text-color">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                          <div class="w-[40px] h-[40px] bg-btn-color rounded-full flex items-center justify-center hover:bg-hover transition">
+                            <i class="fa-solid fa-arrow-right text-white"></i>
+                          </div>
+                        </div>
+                      </div>
+                     <!-- card-5 -->
+                     <div class="card hover:shadow-sm hover:scale-[1.1] transition hover:border">
+                        <figure class="px-4 pt-5">
+                          <img
+                            src="images/criminal.png"
+                            alt="business"/>
+                        </figure>
+                        <div class="card-body items-center text-center space-y-4">
+                          <h2 class="card-title">Criminal Law</h2>
+                          <p class="text-text-color">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                          <div class="w-[40px] h-[40px] bg-btn-color rounded-full flex items-center justify-center hover:bg-hover transition">
+                            <i class="fa-solid fa-arrow-right text-white"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- card-6 -->
+                      <div class="card hover:shadow-sm hover:scale-[1.1] transition hover:border">
+                        <figure class="px-4 pt-5">
+                          <img
+                            src="images/child.png"
+                            alt="business"/>
+                        </figure>
+                        <div class="card-body items-center text-center space-y-4">
+                          <h2 class="card-title">Child support</h2>
+                          <p class="text-text-color">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                          <div class="w-[40px] h-[40px] bg-btn-color rounded-full flex items-center justify-center hover:bg-hover transition">
+                            <i class="fa-solid fa-arrow-right text-white"></i>
+                          </div>
+                        </div>
+                      </div>
+                 </section>
+         </section>
       </main>
       <!-- footer -->
        <footer>
