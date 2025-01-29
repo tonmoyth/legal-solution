@@ -17,6 +17,12 @@
         .poppins-font{
             font-family: "Poppins", serif;
         }
+        .card:hover{
+            background-image: linear-gradient(to bottom,#F3F3F3,#fff)
+        }
+        .slider{
+            background-color: #111111CC;
+        }
     </style>
       <script>
         tailwind.config = {
@@ -123,14 +129,14 @@
      <!-- main -->
       <main class="w-full md:w-11/12 lg:w-10/12 mx-auto">
         <!-- The Legal Practice Area -->
-         <section>
+         <section class="mb-14">
                 <h2 class="text-center text-4xl font-bold mb-3">The Legal Practice Area</h2>
                 <p class="text-center text-text-color mb-12">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
 
                 <!-- card container -->
-                 <section class="grid gap-15 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                 <section class="grid gap-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <!-- card 1 -->
-                    <div class="hover:shadow-sm hover:scale-[1.1] transition hover:border bg-linear-to-r from-cyan-500 to-blue-500">
+                    <div class="card hover:shadow-sm hover:scale-[1.1] transition hover:border">
                         <figure class="px-4 pt-5">
                           <img
                             src="images/business.png"
@@ -220,7 +226,74 @@
                         </div>
                       </div>
                  </section>
+
          </section>
+
+         <!-- What Our Client Say -->
+          <section class="mb-14">
+            <h2 class="text-center text-4xl font-bold mb-3">What Our Client Say</h2>
+            <p class="text-center text-text-color mb-12">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+
+            <!-- slider section / carousel-->
+            <div class="carousel w-full">
+                <!-- slider 1 -->
+                <div id="slide1" class="carousel-item relative h-[500px] w-full bg-[url(images/banner.png)]">
+
+                    <div class="w-9/12 mx-auto flex flex-col items-center justify-center gap-y-4">
+                        <img src="images/Ellipse 1.png" alt="">
+                        <h2 class="text-white text-2xl font-bold">Awlad Hossain</h2>
+                        <p class="text-white">UIX Designer</p>
+                        <p class="text-white text-center">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                    </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <!-- slider 2-->
+                <div id="slide2" class="carousel-item relative h-[500px] w-full bg-[url(images/slider-1.jpg)]">
+
+                    <div class="w-9/12 mx-auto flex flex-col items-center justify-center gap-y-4">
+                        <img src="images/Ellipse 1.png" alt="">
+                        <h2 class="text-white text-2xl font-bold">Awlad Hossain</h2>
+                        <p class="text-white">UIX Designer</p>
+                        <p class="text-white text-center">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                    </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <!-- slider 3 -->
+                <div id="slide3" class="carousel-item relative h-[500px] w-full bg-[url(images/slider-2.jpg)]">
+
+                    <div class="w-9/12 mx-auto flex flex-col items-center justify-center gap-y-4">
+                        <img src="images/Ellipse 1.png" alt="">
+                        <h2 class="text-white text-2xl font-bold">Awlad Hossain</h2>
+                        <p class="text-white">UIX Designer</p>
+                        <p class="text-white text-center">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                    </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <!-- slider 4 -->
+                <div id="slide4" class="carousel-item relative h-[500px] w-full bg-[url(images/slider-1.jpg)]">
+
+                    <div class="w-9/12 mx-auto flex flex-col items-center justify-center gap-y-4">
+                        <img src="images/Ellipse 1.png" alt="">
+                        <h2 class="text-white text-2xl font-bold">Awlad Hossain</h2>
+                        <p class="text-white">UIX Designer</p>
+                        <p class="text-white text-center">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                    </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+          </section>
       </main>
       <!-- footer -->
        <footer>
